@@ -16,7 +16,7 @@ var sessions = {};
 const {
   v4: uuidv4
 } = require('uuid');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const saltRounds = 10;
 var express = require('express')
 const app = express()
