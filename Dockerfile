@@ -16,7 +16,7 @@ RUN npm install
 COPY . .
 
 # Network / reverse proxy config
-LABEL traefik.http.routers.Schimmelsensor_JK.rule="Host(`Schimmelsensor_JK.ds.ava.hfg.design`)"
+LABEL traefik.http.routers.Schimmelsensor_JK_backend.rule="Host(`Schimmelsensor_JK_backend.ds.ava.hfg.design`)"
 
 EXPOSE 3000
 CMD [ "node", "index.js" ]
