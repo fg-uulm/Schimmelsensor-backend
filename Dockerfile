@@ -18,5 +18,5 @@ COPY . .
 # Network / reverse proxy config
 LABEL traefik.http.routers.Schimmelsensor_backend.rule="Host(`Schimmelsensor_backend.ds.ava.hfg.design`)"
 
-EXPOSE 3000
+EXPOSE 3010
 CMD [ "node", "index.js" ]
